@@ -48,7 +48,7 @@ def decode(text, table):
     return key
 
 
-with open("lab1/eng_encoded_24.txt", "r") as f:
+with open("lab1/caesar/eng_encoded_24.txt", "r") as f:
     text = f.read()
 
 print(decode(text, eng_table))

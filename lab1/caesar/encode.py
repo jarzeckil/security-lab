@@ -10,12 +10,12 @@ def caesar(text, key):
     return result
 
 
-with open("lab1/eng.txt", "r") as f:
+with open("lab1/caesar/eng.txt", "r") as f:
     text = f.read()
 
 text_encoded = caesar(text, 5)
 
-with open("lab1/eng_encoded_24.txt", "x") as f:
+with open("lab1/caesar/eng_encoded_24.txt", "x") as f:
     f.write(text_encoded)
 
 

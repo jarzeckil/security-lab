@@ -53,7 +53,7 @@ def decipher_rc4(text, keystream):
     
     return decoded
 
-with open("lab1/crypto2.rc4", "rb") as f:
+with open("lab1/rc4/crypto2.rc4", "rb") as f:
     text = f.read()
 
 '''with open("lab1/keys.txt", "r") as f:

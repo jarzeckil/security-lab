@@ -9,6 +9,6 @@ for a in range(ord('a'), ord('z')+1):
 print(len(keys))
 
 
-with open("lab1/keys.txt", "x") as f:
+with open("lab1/rc4/keys.txt", "x") as f:
     for t in keys:
         f.write(t + "\n")
