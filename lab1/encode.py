@@ -15,7 +15,7 @@ with open("lab1/eng.txt", "r") as f:
 
 text_encoded = caesar(text, 5)
 
-with open("lab1/eng_encoded.txt", "x") as f:
+with open("lab1/eng_encoded_24.txt", "x") as f:
     f.write(text_encoded)
 
 
