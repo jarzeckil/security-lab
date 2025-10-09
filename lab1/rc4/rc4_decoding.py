@@ -26,6 +26,14 @@ def create_keystream(key, N):
     return keystream
 
 
+def decipher_rc4(text, keystream):
+    n = len(text)
+    decoded = ""
+    for i in range(n):
+        decoded += chr(text[i] ^ keystream[i])
+    
+    return decoded
+
 def calc_entropy(text):
     c = Counter(text)
     n = c.total()
@@ -45,18 +53,11 @@ def calc_entropy(text):
     return sum
 
 
-def decipher_rc4(text, keystream):
-    n = len(text)
-    decoded = ""
-    for i in range(n):
-        decoded += chr(text[i] ^ keystream[i])
-    
-    return decoded
 
 with open("lab1/rc4/crypto2.rc4", "rb") as f:
     text = f.read()
 
-'''with open("lab1/keys.txt", "r") as f:
+with open("lab1/rc4/keys.txt", "r") as f:
     file = f.read()
 
 keys = file.split()
@@ -68,16 +69,14 @@ for key in keys:
     print(key)
     keystream = create_keystream(key, N)
     deciphered = decipher_rc4(text, keystream)
-    keys_entropy[key] = calc_entropy(deciphered)'''
+    keys_entropy[key] = calc_entropy(deciphered)
 
-N = len(text)
-key = "eac"
+key = min(keys_entropy, key=keys_entropy.get)
 keystream = create_keystream(key, N)
 deciphered = decipher_rc4(text, keystream)
-
+print(key)
 print(deciphered)
 
-#print(min(keys_entropy, key=keys_entropy.get))
 
 #crypto.rc4 def
 #crypto2.rc4 eac
