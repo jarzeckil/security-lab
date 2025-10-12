@@ -1,0 +1,5 @@
+Określ ile znaków [a-z] należy podać, żeby entropia hasła zbliżyła się do 256-bitowego klucza AES.
+
+
+Metodą brutalnej siły złam hasło i odszyfruj plik "security_ECB_encrypted.bmp". Do stwierdzenia poprawnego odszyfrowania wykorzystaj wiedzę o kształcie nagłówka pliku BMP.
+
