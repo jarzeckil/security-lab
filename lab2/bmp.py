@@ -13,3 +13,4 @@ def check_decryption(text):
 
 with open("lab2/security_ECB_encrypted.bmp", "rb") as f:
     file = f.read(16)
+

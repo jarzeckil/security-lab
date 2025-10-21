@@ -1,0 +1,20 @@
+
+1. Napisz skrypt, który znajdzie dwa dowolne hasła, dla których wynik funkcji skrótu MD5 będzie identyczny dla pierwszych 6 znaków sumy kontrolnej.
+
+
+
+
+2. Wiedząc, że zostały stworzone przy użyciu biblioteki passlib, rozpoznaj, przeprowadź atak słownikowy i złam 4 hash'e:
+
+$1$k8nhEGc9$MwWuWMnHqzGdszCwI98RZ0
+
+$5$rounds=10000$ujmXZ4IqnXl.Bplf$4lcwpQwc.kZFIuCrV8Mgg8bP.Mv.jxx9NitjrqQPK8/
+
+$argon2id$v=19$m=65536,t=3,p=4$GWMMQYgxJmQshdB6L0UIgQ$+glO5pBsNQ6Fb80yakwkzUfSXdX9nQM0ygF2ZNJ5DwI
+
+$1$o8ZWp.W5$FIkSXN.lufeIWvllfQW9l1
+
+W przypadku 4 hash’a przed hashowaniem do hasła został dodany pieprz w postaci jednego znaku [a-z] (doklejony na końcu).
+Ze względów dydaktycznych w zadaniu zabronione jest wykorzystywanie funkcji verify().
+Podpowiedź: wykorzystaj listę popularnych haseł dostępną pod adresem https://raw.githubusercontent.com/danielmiessler/SecLists/refs/heads/master/Passwords/Common-Credentials/10k-most-common.txt
+
