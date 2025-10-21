@@ -2,4 +2,5 @@ Określ ile znaków [a-z] należy podać, żeby entropia hasła zbliżyła się 
 
 
 Metodą brutalnej siły złam hasło i odszyfruj plik "security_ECB_encrypted.bmp". Do stwierdzenia poprawnego odszyfrowania wykorzystaj wiedzę o kształcie nagłówka pliku BMP.
+security_ECB_encrypted.bmp - Zaszyfrowany obraz (AES, ECB, hasło to 16-krotnie powtórzony znak a-z0-9)
 
