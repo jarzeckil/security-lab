@@ -16,6 +16,6 @@ def generate_passwords(lower, upper, output_filename="passwords.txt"):
 
 if __name__ == "__main__":
 
-    generate_passwords(1,3)
+    generate_passwords(1,4)
 
     print("Hasła zostały wygenerowane i zapisane w pliku passwords.txt")

@@ -1,19 +1,24 @@
-from passlib.hash import md5_crypt
-import requests
+from hashlib import md5
 
-passwds = requests.get("https://raw.githubusercontent.com/danielmiessler/SecLists/refs/heads/master/Passwords/Common-Credentials/10k-most-common.txt").text.split()
 
-salt = "a"
+with open("lab3/passwords.txt", "r") as f:
+    file = f.read()
+
+passwds = file.split()
 
 hashes = dict()
 
 for passwd in passwds:
-    hashed = md5_crypt.hash(passwd, salt=salt)
-    hashed_head = hashed[:6]
 
-    if(hashes.__contains__(hashed_head)):
+    encoded_passwd = passwd.encode('utf-8')
+
+    hashed = md5(encoded_passwd)
+
+    hashed_head = hashed.hexdigest()[:6]
+
+    if(hashed_head in hashes):
         print(f"found pair: {hashes[hashed_head]} and {passwd}")
-        print(f"full hashes: {md5_crypt.hash(hashes[hashed_head], salt=salt)} and {hashed}")
+        print(f"full hashes: {md5(hashes[hashed_head].encode('utf-8')).hexdigest()} and {hashed.hexdigest()}")
         break
     else:
         hashes[hashed_head] = passwd
