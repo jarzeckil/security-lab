@@ -24,7 +24,6 @@ for passwd in passwds:
         break
 
 for passwd in passwds:
-    print(passwd)
     argon2_check = argon2.using(memory_cost=65536, time_cost=3, max_threads=4, salt=base64.b64decode("GWMMQYgxJmQshdB6L0UIgQ"+"==")).hash(passwd)
     if(argon2_check == hash_argon2):
         print(f"argon2 passwd is {passwd}")
@@ -40,4 +39,12 @@ for passwd in passwds:
             break
     if(end):
         break
+
+
+""" 
+md5 passwd is alibaba
+sha256 passwd is italy
+argon2 passwd is 1951
+md5 passwd is maryann 
+"""
 
