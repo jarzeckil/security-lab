@@ -17,8 +17,8 @@ def decrypt_aes(key, text):
 
     return decrypted
 
-def check_decryption(text):
-    if text.startswith(b'BM'):
+def check_decryption(decrypted):
+    if decrypted.startswith(b'BM'):
         return True
     return False
 
