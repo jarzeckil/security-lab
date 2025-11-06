@@ -18,7 +18,7 @@ ALLOWED_TAGS = [
     'br', 
     'a',
     'img',
-    'table', 'thead', 'tbody', 'tr', 'th', 'td', # Tabele
+    'table', 'thead', 'tbody', 'tr', 'th', 'td',
 ]
 
 ALLOWED_ATTRIBUTES = {

