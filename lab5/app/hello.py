@@ -26,6 +26,7 @@ def user_loader(username):
     sql = db.cursor()
     sql.execute(f"SELECT username, password FROM user WHERE username = '{username}'")
     row = sql.fetchone()
+    print(row)
     try:
         username, password = row
     except:

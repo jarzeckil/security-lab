@@ -1,3 +1,6 @@
 bob:bob
 john:snow
 bach:password
+
+
+bob' UNION SELECT sqlite_version(), 'a
