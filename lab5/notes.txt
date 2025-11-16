@@ -3,4 +3,5 @@ john:snow
 bach:password
 
 
-bob' UNION SELECT sqlite_version(), 'a
+1. ' + (SELECT sqlite_version()) + '
+2. filler'), ('john', 'to jest napad
