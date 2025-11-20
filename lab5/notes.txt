@@ -3,6 +3,6 @@ john:snow
 bach:password
 
 
-1. 1. ' + (SELECT sqlite_version()) + '
+1.  ' + (SELECT sqlite_version()) + '
 
 2. :pp'), ('john', 'to jest napad

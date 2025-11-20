@@ -89,10 +89,13 @@ def render():
     username = current_user.id
     db = sqlite3.connect(DATABASE)
     sql = db.cursor()
+
     # vulnerable version
     sql.execute(f"INSERT INTO notes (username, note) VALUES ('{username}', '{rendered}')")
+
     # safe version
-    # sql.execute(f"INSERT INTO notes (username, note) VALUES (?, ?)", (username, rendered))
+    #sql.execute(f"INSERT INTO notes (username, note) VALUES (?, ?)", (username, rendered))
+
     db.commit()
     return render_template("markdown.html", rendered=rendered)
 
